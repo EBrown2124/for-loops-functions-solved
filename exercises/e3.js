@@ -9,8 +9,15 @@
  * */
 
 export function getAverage(array) {
-  // Your code goes here...
+  var avg = 0; 
+  
+  for (var i = 0; i < array.length; i++){
+    var currNum = array[i]
 
+    avg += currNum;
+  }
+  avg = avg / array.length
+  return avg;
 }
 
 

@@ -4,7 +4,17 @@
 
 export function getNumbersWithSquareRoots(max) {
   // Your code goes here...
+  var arr1 = [];
 
+  for(var i = 0; i <= max; i++) {
+    var tm1 = Math.sqrt(i);
+
+    if(tm1 === Math.floor(tm1)) {
+      arr1.push(i);
+    }
+  }
+
+  return arr1;
 }
 
 // === TEST YOURSELF ===

@@ -27,9 +27,7 @@
     "test-20": "vitest --run e20."
   },
   "devDependencies": {
-    "eslint": "^8.30.0"
-  },
-  "dependencies": {
-    "vitest": "^0.26.2"
+    "eslint": "^8.30.0",
+    "vitest": "^0.29.8"
   }
 }

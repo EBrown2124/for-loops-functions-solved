@@ -5,9 +5,12 @@
 
 export function getFirstTenNumbers() {
   // Your code goes here...
+  var numArray = [1,2,3,4,5,6,7,8,9,10];
 
+  return numArray;
 }
 
+console.log(getFirstTenNumbers())
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-1"
 // If the test has all tests passed, switch to the next exercise file
