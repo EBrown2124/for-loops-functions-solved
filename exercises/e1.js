@@ -7,7 +7,7 @@ export function getFirstTenNumbers() {
   // Your code goes here...
   var numArray = [1,2,3,4,5,6,7,8,9,10];
 
-  return numArray;
+  return numArray; tim
 }
 
 console.log(getFirstTenNumbers())
