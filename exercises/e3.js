@@ -34,16 +34,17 @@ export function getStringSum(str) {
   var foundNum = 0;
   
   var strArray = str.match(/[0-9]/g);
-  if (strArray === null || strArray.length === 0) return 0;
-  
+  if (strArray === null || strArray.length === 0){
+  return 0;
+  }
   else{
-    
-    for(var i = 0; i < strArray.length; i++)
+    for(var i = 0; i < strArray.length; i++){
       numArray.push(Number(strArray[i]));
-    
-    for(var i = 0; i < numArray.length; i++)
+    }
+
+    for(var i = 0; i < numArray.length; i++){
       foundNum += numArray[i];
-    
+    }
     return foundNum;
   }
 }
