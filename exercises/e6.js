@@ -7,8 +7,8 @@ export function getClientWithNoMoney(array) {
   // Your code goes here...
 
   for(const {name, balance} of array){
-    if (balance === 0.0) {
-      return {name};
+    if (balance === 0) {
+      return [name];
     }
   }
   return null;
