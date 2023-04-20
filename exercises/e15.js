@@ -6,9 +6,10 @@
 
 export function concatArrays(arr1, arr2) {
   // Your code goes here...
-
+  const concatenatedArray = arr1.concat(arr2);
+  
+  return concatenatedArray;
 }
-
 
 
 // === TEST YOURSELF ===
