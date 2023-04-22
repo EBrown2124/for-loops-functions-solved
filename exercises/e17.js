@@ -9,7 +9,7 @@ export function doesArrayInclude(array, value) {
   // Your code goes here...
   const doesIt = array.includes(value);
 
-  return doesIt
+  return doesIt;
 }
 
 
