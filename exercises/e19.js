@@ -6,6 +6,9 @@
 
 export function reverseArray(array) {
   // Your code goes here...
+  const back = array.reverse()
+
+  return back
 
 }
 
