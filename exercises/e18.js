@@ -5,10 +5,15 @@
 // NOTE: You can NOT use the array.join(), array.toString(), and array.replace() methods in your code
 
 export function joinToString(array, separator) {
-    const team = array.join(separator)
-
-    return team
-}
+    let join = "";
+    for (let i = 0; i < array.length; i++) {
+      join += array[i];
+      if (i < array.length - 1) {
+        join += separator;
+      }
+    }
+    return join;
+  }
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-18"

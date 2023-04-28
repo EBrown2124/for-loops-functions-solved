@@ -11,10 +11,16 @@ export function separateNamesWithAFromRest(array) {
   let withoutLetter = [];
 
   for (let i = 0; i < array.length; i++){
-    if (array[i].includes('a')){
-      withLetter.push(array[i]);
+    let hasLetter = false;
+    for (let j = 0; j < array[i].length; j++ ){
+      if (array[i][j]==='a'){
+        hasLetter = true;
+      }
+    }
+    if (hasLetter) {
+      withLetter.push(array[i])
     } else {
-      withoutLetter.push(array[i]);
+      withoutLetter.push(array[i])
     }
   }
   return [withLetter,withoutLetter];

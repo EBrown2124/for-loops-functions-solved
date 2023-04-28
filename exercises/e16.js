@@ -7,9 +7,17 @@
 
 export function flatArrays(array) {
   // Your code goes here...
-  const work = array.flat();
+  let result = [];
 
-  return work
+  for (let i = 0; i < array.length; i++) {
+    if (Array.isArray(array[i])) {
+      result = result.concat(flatArrays(array[i]));
+    } else {
+      result.push(array[i]);
+    }
+  }
+
+  return result;
 }
 
 
